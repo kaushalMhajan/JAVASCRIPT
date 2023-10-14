@@ -1,0 +1,26 @@
+<!Doctype html>
+<html>
+<head><title> ternary operator </title>
+</head>
+<body>
+<button class="button" onclick="pattern()"></button>
+<p id="demo"> </p>
+<script>
+const pattern = () => {
+	let n = 5;
+	let i = 1;
+	while(i<=n){
+		let j = 1;
+		while(j<=i){
+			document.write("*")
+			j++;
+		}
+		document.write("\n")
+		i++;
+	}
+	
+}
+document.getElementById("demo").innerHTML = pattern()
+</script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Simple Calculator</title>
+        <style>
+            .mycalc{
+                width: 200px;
+                border: 1px solid red;
+                background-color: antiquewhite;
+                margin-left: 45%;
+                margin-top: 15%;
+                border-radius: 10px;
+            }
+
+            .mycalc input[type="button"]{
+                padding: 9px;
+                margin: 5px;
+                width: 50px;
+            }
+            .mycalc input[type="text"]{
+                padding: 10px;
+                width: 160px;
+                margin-top: 20px;
+                margin-left: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <script>
+            function anumber(num){
+                document.getElementById("result").value+=num;
+            }
+            function aoperator(ope){
+                document.getElementById("result").value+=ope;
+            }
+            function clearInput(){
+                document.getElementById("result").value="";
+            }
+           
+            function Calculate(){
+                var expression = document.getElementById("result").value;
+                var result = eval(expression);
+                document.getElementById("result").value = result;
+            }            
+        </script>
+        <div class="mycalc">
+            <input type="text" id="result" readonly>
+            <input type="button" value="1" onclick="return anumber(1)">
+            <input type="button" value="2" onclick="return anumber(2)">
+            <input type="button" value="3" onclick="return anumber(3)">
+            <input type="button" value="+" onclick="return aoperator('+')">
+            <input type="button" value="4" onclick="return anumber(4)">
+            <input type="button" value="5" onclick="return anumber(5)">
+            <input type="button" value="6" onclick="return anumber(6)">
+            <input type="button" value="-" onclick="return aoperator('-')">
+            <input type="button" value="7" onclick="return anumber(7)">
+            <input type="button" value="8" onclick="return anumber(8)">
+            <input type="button" value="9" onclick="return anumber(9)">
+            <input type="button" value="*" onclick="return aoperator('*')">
+            <input type="button" value="0" onclick="return anumber(0)">
+            <input type="button" value="=" onclick="return Calculate()">
+            <input type="button" value="/" onclick="return aoperator('/')">
+            <input type="button" value="C" onclick="return clearInput()">
+
+        </div>
+    </body>
+</html>
