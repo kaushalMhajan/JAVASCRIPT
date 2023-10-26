@@ -62,21 +62,33 @@ const num3 = 1000000
 // console.log(num3.toLocaleString())
 
 /* Maths */
-console.log(Math)
-console.log(Math.abs(-4))
-console.log(Math.round(4.23))
-console.log(Math.ceil(5.23))
-console.log(Math.floor(5.93))
-console.log(Math.pow(2,3))
-console.log(Math.max(2,3,56))
-console.log(Math.min(2,3,56))
-console.log(Math.floor(Math.random()*10) + 1);
+// console.log(Math)
+// console.log(Math.abs(-4))
+// console.log(Math.round(4.23))
+// console.log(Math.ceil(5.23))
+// console.log(Math.floor(5.93))
+// console.log(Math.pow(2,3))
+// console.log(Math.max(2,3,56))
+// console.log(Math.min(2,3,56))
+// console.log(Math.floor(Math.random()*10) + 1);
 
 const min = 10
 const max = 20
 
-console.log(Math.floor(Math.random() * (max-min + 1)) + min)
+const min1 = 15
+const max1 = 20
+
+// console.log(Math.floor(Math.random() * (max-min + 1)) + min)
+// console.log(Math.floor(Math.random() * (max1- min1 + 1))+ min1);
+
+//Array new methods 
+let arr = [1,2,3,[4,5,6],8,[3,56,[5,8,9]]]
+console.log(arr.flat(Infinity))
 
 
+let score1  = 90
+let score2 = 56
 
+console.log(Array.of(score1,score2))
 
+console.log(Array.from({name1 : 'kaushal'}))
