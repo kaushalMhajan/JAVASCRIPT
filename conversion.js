@@ -83,12 +83,16 @@ const max1 = 20
 
 //Array new methods 
 let arr = [1,2,3,[4,5,6],8,[3,56,[5,8,9]]]
-console.log(arr.flat(Infinity))
+// console.log(arr.flat(Infinity))
 
 
 let score1  = 90
 let score2 = 56
 
-console.log(Array.of(score1,score2))
+// console.log(Array.of(score1,score2))
 
-console.log(Array.from({name1 : 'kaushal'}))
+// console.log(Array.from({name1 : 'kaushal'}))
+
+
+
+
